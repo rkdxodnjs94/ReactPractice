@@ -22,6 +22,10 @@ const FixedHeader = ({ user }) => {
   const clickLogout = () => {
     navigate("/");
   };
+  const clickHome = () => {
+    navigate("/");
+  };
+
   return (
     <Layout>
       <Header style={{ position: "fixed", zIndex: 4, width: "100vw" }}>
@@ -39,8 +43,9 @@ const FixedHeader = ({ user }) => {
           <Menu.Item key="4">
             <Link to="/request">Submit a shipment request</Link>
           </Menu.Item>
-          <Menu.Item key="5" icon={<InfoCircleOutlined />}>
-            Help
+          <Menu.Item key="5" icon={<InfoCircleOutlined />}
+          onClick={clickHome}>
+            Home
           </Menu.Item>
           <Menu.Item key="6" icon={<SearchOutlined />}></Menu.Item>
           <Menu.Item key="7" icon={<BellOutlined />}></Menu.Item>
