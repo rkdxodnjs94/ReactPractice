@@ -2,7 +2,7 @@ import FixedHeader from "../components/common/FixedHeader";
 import FixedMenu from "../components/common/FixedMenu";
 import { Footer } from "antd/lib/layout/layout";
 import DashboardList from "../components/common/DashboardList";
-import './Dashboard.css';
+import './Animation.css';
 import { useEffect, useState } from "react";
 
 const Dashboard = () => {
@@ -16,7 +16,7 @@ const Dashboard = () => {
       setFade('')
     }
   })
-  
+
   return (
     <div className={'start ' + fade}>
       <FixedHeader />
